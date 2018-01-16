@@ -1,0 +1,10 @@
+ErrorDocument 403 "<html><head><script>window.location = 'https://' + window.location.hostname + window.location.pathname;</script></head></html>"
+SSLRequireSSL
+AuthName "Restricted Access"
+AuthType Kerberos
+Krb5Keytab /etc/krb5.keytab
+KrbAuthRealms RMIT.INTERNAL
+KrbMethodNegotiate Off
+KrbMethodK5Passwd On
+KrbVerifyKDC off
+require user s3323595@RMIT.INTERNAL e54061@RMIT.INTERNAL e04128@RMIT.INTERNAL e69042@RMIT.INTERNAL e09755@RMIT.INTERNAL e09962@RMIT.INTERNAL e02764@RMIT.INTERNAL e59474@RMIT.INTERNAL e87149@RMIT.INTERNAL e15309@RMIT.INTERNAL

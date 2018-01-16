@@ -1,0 +1,715 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face
+{
+  font-family: mainFont;
+  /* font taken from http://www.dafont.com/champagne-limousines.font */
+  src: url(champagne_limousines.ttf);	
+}
+
+body
+{
+  background-color: #080808;
+  margin:0;
+  padding:0;
+}
+
+.logo
+{
+  position: relative;
+  width: 1000px;
+  height: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  top:10px;
+}
+
+.nav
+{
+  position: relative;
+  font-family: mainFont;
+  font-size: 150%;
+  display:block;
+  margin: auto;
+  width:1000px;
+  height:50px;
+}
+
+a:link, a:visited
+{
+  text-decoration: none;
+}
+
+a.navPseudo:link, a.navPseudo:visited, a.navPseudo:active
+{
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  font-family: mainFont;
+
+  padding-bottom: 5px;
+}
+a.navPseudo:hover
+{
+  background-color:#2043c9;
+}
+
+a.footerPseudo:link, a.footerPseudo:visited, a.footerPseudo:active
+{
+  color: #A09F9F;
+  text-decoration: none;
+}
+
+
+#masthead
+{
+  position: relative;
+  display:block;
+  margin-bottom:30px;
+  padding: 0px;
+  padding-bottom: 5px; 
+  height:150px;
+  
+  background: -webkit-linear-gradient(left, #262626 20%, #333333 50%, #262626 80%);
+  background: -moz-linear-gradient(right, #262626 20%, #333333 50%, #262626 80%);
+  background: -o-linear-gradient(right, #262626 20%, #333333 50%, #262626 80%);
+  background: linear-gradient(to right, #262626 20%, #333333 50%, #262626 80%);
+}
+
+/*tutorial from css3.bradshawenterprises.com/cfimg/#cfimg1 used as a starting point to create the cinema slideshow using CSS3*/
+#maininfo
+{
+  position:relative;
+  height:450px;
+  width:1000px;
+  margin: 0px auto;
+  margin-bottom:80px;
+}
+
+#maininfo img
+{
+  position:absolute;
+  left:0;
+  width: inherit;
+  
+  -webkit-animation-name: test;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 24s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#maininfo img:nth-of-type(1) {
+  -webkit-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  -o-animation-delay: 18s;
+  animation-delay: 18s;
+}
+#maininfo img:nth-of-type(2) {
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  animation-delay: 12s;
+}
+#maininfo img:nth-of-type(3) {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+}
+#maininfo img:nth-of-type(4) {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+}
+@-webkit-keyframes test
+{
+   0% {opacity:1;}
+   17% {opacity:1;}
+   33% {opacity:0;}
+   83% {opacity:0;}
+   100% {opacity:1;}
+}
+
+#info
+{
+  position: relative;
+  background-color: #595959;
+  width: 950px;
+  margin:auto;
+  padding: 10px;
+  border: 10px;
+  color: rgb(202, 202, 202);
+  font-family: "Arial";
+}
+
+#form
+{
+  position: relative;
+  background-color: #595959;
+  width: 950px;
+  height: 400px;
+  margin:auto;
+  padding: 10px;
+  border: 10px;
+  color: white;
+  font-family: "Arial";
+  text-align: center;
+}
+
+#moviesSchedule
+{
+  position: relative;
+  background-color: #595959;
+  width: 950px;
+  margin:auto;
+  padding: 10px;
+  border: 10px;
+  color: white;
+  font-family: "Arial";
+}
+
+p
+{
+  position: relative;
+  text-align: start;
+}
+
+.formLeft
+{
+  float:left;
+  position: relative;
+  width: 250px;
+  margin:auto;
+  margin-left:200px;
+  margin-right:5px;
+  padding: 10px;
+  border: 10px;
+  font-family: "Arial";
+  line-height: 150%;
+  text-align: left;
+}
+
+.formRight
+{
+  float:right;
+  position: relative;
+  width: 455px;
+  margin:auto;
+  padding: 10px;
+  border: 10px;
+  font-family: "Arial";
+  line-height: 150%;
+  text-align: left;
+
+}
+
+.infoHead
+{
+  position: relative;
+  top:-60px;
+  left: -10px;
+  margin:inherit;
+  width: 970px;
+  padding: 10px;
+  height: 20px;
+  
+  background: -webkit-linear-gradient(left, #030B30 20%, #122261 50%, #030B30 80%);
+  background: -moz-linear-gradient(right, #030B30 20%, #122261 50%, #030B30 80%);
+  background: -o-linear-gradient(right, #030B30 20%, #122261 50%, #030B30 80%);
+  background: linear-gradient(to right, #030B30 20%, #122261 50%, #030B30 80%);
+}
+
+.infoHeadBorder
+{
+  position: relative;
+  top:-15px;
+  left: -25px;
+  margin:inherit;
+  width: 980px;
+  height:30px;
+  padding: 10px;
+  border: 5px;
+  border-radius:5px;
+  font-family: mainFont;
+  color:white;
+  text-align: center;
+
+  background: -webkit-linear-gradient(left, #030B30 20%, #122261 50%, #030B30 80%);
+  background: -moz-linear-gradient(right, #030B30 20%, #122261 50%, #030B30 80%);
+  background: -o-linear-gradient(right, #030B30 20%, #122261 50%, #030B30 80%);
+  background: linear-gradient(to right, #030B30 20%, #122261 50%, #030B30 80%);
+}
+
+.extendRead
+{
+  color: #93E2FD;
+  display:none;
+}
+.extendRead:hover
+{
+  color: #1aa7ed;
+}
+
+.movie
+{
+    margin: 2%;
+}
+
+.moviePoster
+{
+  width:50%;
+  display:inline-block;
+}
+
+.moviePoster img
+{
+  width:100%;
+}
+
+.movieDescription
+{
+    width: 46%;
+	vertical-align: top;
+	color:#FFF;
+  	text-align:left;
+	display:inline-block;
+	padding-left:2%;
+	padding-bottom:4px;
+}
+
+.movieDescription p:nth-of-type(1)
+{
+	font-size:24pt;
+}
+
+.movieDescription p:nth-of-type(2)
+{
+	font-size:12pt;
+	vertical-align:middle;
+}
+/*.movieDescription img:nth-of-type(1)
+{
+	width:9%;
+	height:9%;
+}*/
+
+.scheduleTable
+{
+color:white;
+  width:80%;
+  text-align:left;
+  
+}
+.cartTable
+{
+color:white;
+  width:80%;
+  text-align:left;
+  
+}
+.scheduleTH
+{
+  width:50%;
+  height:1.5em;
+  border-radius:5px;
+  background-color:#14215A;
+    font-size:18px;
+}
+.cartTH
+{
+  height:1.5em;
+  border-radius:5px;
+  background-color:#14215A;
+    font-size:18px;
+}
+.scheduleTH, .scheduleTD
+{
+  padding-left:3%;
+}
+
+.scheduleTR:hover
+{
+  background:#000;
+}
+
+.cartButton {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  text-align:center;
+  font-size: 20px;
+  background: #3498db;
+  padding: 5% 10%;
+  text-decoration: none;
+}
+
+.cartButton:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+.buyTicket {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  width: 45%;
+  text-align:center;
+  font-size: 20px;
+  background: #3498db;
+  padding: 5% 10%;
+  text-decoration: none;
+}
+
+.buyTicket:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+
+footer
+{
+  text-align: center;
+  display:block;
+  margin-top:20px;
+  position: relative;
+  display:block;
+  padding: 10px; 
+  padding-bottom: 0px;
+  color: #A09F9F;
+  background: -webkit-linear-gradient(left, #262626 20%, #333333 50%, #262626 80%);
+  background: -moz-linear-gradient(right, #262626 20%, #333333 50%, #262626 80%);
+  background: -o-linear-gradient(right, #262626 20%, #333333 50%, #262626 80%);
+  background: linear-gradient(to right, #262626 20%, #333333 50%, #262626 80%);
+}
+
+h2
+{
+  font-family: mainFont;
+  margin-top:0px;
+  margin-bottom:5px;	
+}
+
+.ticketTH
+{
+  width:50%;
+  height:1.5em;
+  border-radius:5px;
+  background-color:#14215A;
+    font-size:18px;
+}
+
+.ticketTH, .ticketTD, #SAPrice, #SCPrice, #SPPrice, #FAPrice, #FCPrice, #B1Price, #B2Price, #B3Price, #TotalPrice, .hidPrice
+{
+  padding-left:1%;
+}
+
+
+
+
+
+#film, #time, #day
+{
+  width: 50%;
+  font-size:100%;
+  border-radius: 6px;
+  padding: 2px 1px;
+}  
+
+#bookForm 
+{
+  position: relative;
+  background-color: #595959;
+  width: 950px;
+  margin:auto;
+  padding: 10px;
+  border: 10px;
+  color: white;
+  font-family: "Arial";
+}
+
+.bookRight
+{
+  width:40%;
+  display:inline-block;
+}
+
+.bookRight img
+{
+  width:100%;
+}
+
+.bookLeft
+{
+    width: 56%;
+	line-height:150%;
+	vertical-align: top;
+	color:#FFF;
+  	text-align:left;
+	display:inline-block;
+	padding-right:2%;
+	padding-left:1%;
+	padding-bottom:4px;
+}
+
+#TotalPrice
+{
+  background-color:transparent;
+  border:0px;
+  font-size:103%;
+  color:white;
+}
+
+
+.hidPrice
+{
+  background-color:transparent;
+  border:0px;
+  font-size:103%;
+  color:white;
+  display:none;
+  visibility:hidden;
+}
+#bookSubmit
+{
+  background: #3498db;
+  border-radius: 5px;
+  border:0px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+}
+
+#bookSubmit:hover
+{
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+.hiddenRead, .read
+{
+  display:inline;
+}
+
+.hiddenRead2
+{
+  display:inline;
+}
+
+#hide
+{
+  display:none;
+  visibility:hidden;
+}
+
+.booked
+{
+	margin:1%;
+	padding:1%;
+    border: 2px solid navy;
+
+}
+
+@media only screen and (max-width: 1100px) 
+{ 
+  #maininfo
+  {
+    position:relative;
+    width:90vw;
+	height:40vw;
+    margin: 0px auto;
+    margin-bottom:4%;
+  }
+  #masthead
+  {
+    position: relative;
+    display:block;
+    margin-bottom:2%;
+    padding: 0px;
+    padding-bottom: 5px; 
+    height:13vw;
+  }
+  .logo
+  {
+    position: relative;
+    width: auto;
+    height: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    top:10px;
+  }
+  
+  .logo img
+  {
+    height: 100%; 
+  }
+
+  .nav
+  {
+    position: relative;
+    font-family: mainFont;
+    font-size: 2.2vw;
+    display:block;
+    margin: auto;
+    width:1000px;
+    height:50px;
+  }
+  
+  #info
+  {
+    position: relative;
+    background-color: #595959;
+    width: 85vw;
+    margin:auto;
+    padding: 1%;
+    border: 10px;
+    color: rgb(202, 202, 202);
+    font-family: "Arial";
+  }
+  .infoHeadBorder
+  {
+    position: relative;
+    top:-15px;
+    left: -25px;
+    margin:inherit;
+    width: 88vw;
+    height:30px;
+    padding: 10px;
+    border: 5px;
+    border-radius:5px;
+    font-family: "Arial";
+    color:white;
+    text-align: center;
+  }
+   #form
+  {
+    position: relative;
+    background-color: #595959;
+    width: 85vw;
+    margin:auto;
+    padding: 1%;
+    border: 10px;
+    color: rgb(202, 202, 202);
+    font-family: "Arial";
+  }
+  #moviesSchedule 
+  {
+    position: relative;
+    background-color: #595959;
+    width: 85vw;
+    margin:auto;
+    padding: 1%;
+    border: 10px;
+    color: rgb(202, 202, 202);
+    font-family: "Arial";
+  }
+  
+  
+}
+
+
+
+@media only screen and (max-width: 900px) 
+{ 
+  .movieDescription p:nth-of-type(1)
+  {
+    font-size:3.5vw;
+  }
+  .movieDescription p:nth-of-type(2)
+  {
+    font-size:2vw;
+  }
+  .extendRead
+  {
+    color: #93E2FD;
+    display:inline;
+  }
+  .hiddenRead
+  {
+	visibility: hidden;
+    display:none;
+  }
+  .bookLeft
+  {
+    width:100%;
+  }
+  #movieBooked
+  {
+    visibility: hidden;
+	display:none;
+  }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 500px) 
+{ 
+  .moviePoster
+  {
+	display: block;
+	margin:0px auto;
+    width: 46%;
+  }
+   .movieDescription
+  {
+	display: block;
+	margin:0px auto;
+    width: 100%;
+  }
+  .movieDescription p:nth-of-type(1)
+  {
+    font-size:7vw;
+  }
+   .movieDescription p:nth-of-type(2)
+  {
+    font-size:3vw;
+  }
+  .hiddenRead, .read, .hiddenRead2
+  {
+    display:none;
+	visibility:hidden;
+  }
+  .movieDescription p:nth-of-type(4)
+  {
+    display:none;
+	visibility:hidden;
+  }
+  #film, #time, #day
+  {
+    width:100%;
+  }
+  #bookSubmit
+  {
+    width:100%;
+  }
+  .bookLeft
+  {
+    width:98%;
+  }
+  h2
+  {
+    font-size:6vw;
+  }
+  #masthead
+  {
+    margin-bottom:8%;
+  }
+}
+
+
+
+
+
+
+
