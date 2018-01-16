@@ -5,7 +5,7 @@ This is a project for web programming in first year of RMIT. We are required to 
 
 ### Built With
 * [PHP](http://www.php.net/) - Language
-* C# - Language
+* CSS - Language
 * Javascript - Language
 * HTML - Language
 
